@@ -13,6 +13,9 @@ UserSettings/
 MemoryCaptures/
 [Bb]ee/
 
+# Visual Studio
+.vs/
+
 # Package Cache
 [Ll]ibrary/PackageCache/
 
