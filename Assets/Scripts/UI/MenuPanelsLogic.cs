@@ -16,7 +16,7 @@ public class MenuPanelsLogic : MonoBehaviour
         OptionsPanel.SetActive(IsActive);
         ControlsPanel.SetActive(IsActive);
     }
-
+    #region PanelLogics
     public void OpenOptionsPanel()
     {
         //Disable the Mainpanel and show OptionsPanel.
@@ -49,4 +49,5 @@ public class MenuPanelsLogic : MonoBehaviour
         Application.Quit();
         print(Application.productName + "Closed!");
     }
+    #endregion
 }
