@@ -1811,6 +1811,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2327201086267799907, guid: 57e123460955b5d448e18a22b9eff459,
         type: 3}
+      propertyPath: m_overrideHtmlColors
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2327201086267799907, guid: 57e123460955b5d448e18a22b9eff459,
+        type: 3}
       propertyPath: m_enableVertexGradient
       value: 0
       objectReference: {fileID: 0}
@@ -2725,6 +2730,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 109782480328151171, guid: 87f0904d05c6ace4d8959a42dcab82c2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 69.399994
+      objectReference: {fileID: 0}
+    - target: {fileID: 109782480328151171, guid: 87f0904d05c6ace4d8959a42dcab82c2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 13.200012
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145052160804665886, guid: 87f0904d05c6ace4d8959a42dcab82c2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -25.599976
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145052160804665886, guid: 87f0904d05c6ace4d8959a42dcab82c2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 8.700012
+      objectReference: {fileID: 0}
     - target: {fileID: 5546685821568758236, guid: 87f0904d05c6ace4d8959a42dcab82c2,
         type: 3}
       propertyPath: m_Pivot.x

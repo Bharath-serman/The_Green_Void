@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\The_Green_Void_\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\ui\\startgamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\timelinemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timelinemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\ui\\startgamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\startgamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\ghostblinking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ghostblinking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\ui\\loadinglogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\typewritingeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\typewritingeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\timelinemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timelinemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,32 +30,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 207,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StartGameLogic.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\StartGameLogic.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\StartGameLogic.cs",
               "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\StartGameLogic.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\StartGameLogic.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAYwFYAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-10T13:13:13.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "TimeLineManager.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\TimeLineManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TimeLineManager.cs",
               "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\TimeLineManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\TimeLineManager.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAABRwAkAAAAjAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBwAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T12:10:36.421Z"
+              "WhenOpened": "2026-01-04T12:10:36.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GhostBlinking.cs",
+              "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\GhostBlinking.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GhostBlinking.cs",
+              "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\GhostBlinking.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GhostBlinking.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwBIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T04:49:32.895Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -61,20 +79,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "LoadingLogic.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\LoadingLogic.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\LoadingLogic.cs",
               "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\LoadingLogic.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\LoadingLogic.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwC8AAAArAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAuwFEAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-11T12:41:32.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "TypeWritingEffect.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\TypeWritingEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TypeWritingEffect.cs",
@@ -82,8 +100,7 @@
               "RelativeToolTip": "Assets\\Scripts\\TypeWritingEffect.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T13:04:57.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-27T13:04:57.582Z"
             }
           ]
         }
