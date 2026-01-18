@@ -1,0 +1,70 @@
+using UnityEngine;
+using System.Collections;
+using Cinemachine;
+
+public class Signals : MonoBehaviour
+{
+    //Input Section
+    [Header("FOV")]
+    [Tooltip("Inputs required for Manipulating the FOV Angle")]
+    public CinemachineVirtualCamera VirtualCamera;
+    private float ZoomInFOV = 1f;
+    private float ZoomOutFOV = 93.90182f;
+    private float ZoomInTime = 1.5f;
+    private float ZoomOutTime = 2.8f;
+
+    [Header("Skybox")]
+    [Tooltip("Inputs required for Changing the Skybox")]
+    //public Skybox GreenSkyBox;
+    public Material GreenMaterial;
+
+    public void CallZoomInCoroutine()
+    {
+        StartCoroutine(FOV(ZoomInFOV));
+    }
+
+    public void ChangeSkybox()
+    {
+        //Change the Skybox to GreenVoid.
+        RenderSettings.skybox = GreenMaterial;
+        DynamicGI.UpdateEnvironment();
+    }
+
+    public void CallZoomOutCoroutine()
+    {
+        StartCoroutine(ZOFOV(ZoomOutFOV));
+    }
+
+    #region ZoomInCoroutine
+    //Coroutine.
+    IEnumerator FOV(float target)
+    {
+        float initial = VirtualCamera.m_Lens.FieldOfView;
+        float time = 0f;
+
+        while (time < 1f)
+        {
+            time += Time.deltaTime / ZoomInTime;
+            VirtualCamera.m_Lens.FieldOfView = Mathf.Lerp(initial, target, time);
+            yield return null;
+        }
+    }
+    #endregion
+
+    #region ZoomOutCoroutine
+    IEnumerator ZOFOV(float end)
+    {
+        float start = VirtualCamera.m_Lens.FieldOfView;
+        float duration = 0f;
+
+        while (duration < 1f)
+        {
+            duration += Time.deltaTime / ZoomOutTime;
+            VirtualCamera.m_Lens.FieldOfView = Mathf.Lerp(start, end, duration);
+            yield return null;
+        }
+    }
+
+    #endregion
+
+}
