@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class Signals : MonoBehaviour
 {
@@ -13,10 +14,11 @@ public class Signals : MonoBehaviour
     private float ZoomInTime = 1.5f;
     private float ZoomOutTime = 2.8f;
 
-    [Header("Skybox")]
+    [Header("Skybox and Scene")]
     [Tooltip("Inputs required for Changing the Skybox")]
     //public Skybox GreenSkyBox;
     public Material GreenMaterial;
+    private string InitialScene = "ChaosLevel";
 
     public void CallZoomInCoroutine()
     {
@@ -66,5 +68,12 @@ public class Signals : MonoBehaviour
     }
 
     #endregion
+
+    //SceneLoad Signal
+    public void NextScene()
+    {
+        //Load next scene.
+        SceneManager.LoadScene(InitialScene);
+    }
 
 }
