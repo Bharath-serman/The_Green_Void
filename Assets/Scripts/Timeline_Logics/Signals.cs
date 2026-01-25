@@ -75,5 +75,4 @@ public class Signals : MonoBehaviour
         //Load next scene.
         SceneManager.LoadScene(InitialScene);
     }
-
 }

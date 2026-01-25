@@ -3,11 +3,7 @@
   "WorkspaceRootPath": "D:\\The_Green_Void_\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\ghostblinking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ghostblinking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\timeline_logics\\signals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\timeline_logics\\signals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timeline_logics\\signals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\ui\\startgamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\startgamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\ghostblinking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ghostblinking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\ui\\loadinglogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,39 +34,39 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "TimeLineManager.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\Timeline_Logics\\TimeLineManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timeline_Logics\\TimeLineManager.cs",
               "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\Timeline_Logics\\TimeLineManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Timeline_Logics\\TimeLineManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAfAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAUwBwAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-24T08:48:27.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Signals.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\Timeline_Logics\\Signals.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timeline_Logics\\Signals.cs",
               "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\Timeline_Logics\\Signals.cs",
               "RelativeToolTip": "Assets\\Scripts\\Timeline_Logics\\Signals.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAgwEwAAAAqAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-18T12:38:30.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "StartGameLogic.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\StartGameLogic.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\StartGameLogic.cs",
               "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\StartGameLogic.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\StartGameLogic.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-10T13:13:13.588Z"
             }
@@ -78,13 +78,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "GhostBlinking.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\GhostBlinking.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GhostBlinking.cs",
               "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\GhostBlinking.cs",
               "RelativeToolTip": "Assets\\Scripts\\GhostBlinking.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAIwBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-18T04:49:32.895Z",
               "EditorCaption": ""
