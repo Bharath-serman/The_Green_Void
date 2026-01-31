@@ -1333,6 +1333,7 @@ GameObject:
   - component: {fileID: 2905464312473333104}
   - component: {fileID: 2429914830977235572}
   - component: {fileID: 2662340596567951081}
+  - component: {fileID: 649990538620444770}
   m_Layer: 0
   m_Name: IDOL Prefab 2
   m_TagString: Untagged
@@ -1388,14 +1389,14 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 5
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
+  m_StoppingDistance: 1.7
+  m_AutoTraverseOffMeshLink: 0
+  m_AutoBraking: 0
+  m_AutoRepath: 0
   m_Height: 2
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
@@ -1415,13 +1416,35 @@ MonoBehaviour:
   navAgent: {fileID: 2429914830977235572}
   player: {fileID: 0}
   anim: {fileID: 2905464312473333104}
-  hitEffect: {fileID: 0}
-  health: 100
-  damage: 10
+  health: 400
   walkPointRange: 10
-  sightRange: 15
+  sightRange: 10
   attackRange: 2
-  timeBetweenAttacks: 1.5
+  timeBetweenAttacks: 0.2
+  attackCommitTime: 0.2
+--- !u!136 &649990538620444770
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2978861661846278773}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.4688383
+  m_Height: 2.6672924
+  m_Direction: 1
+  m_Center: {x: -0.18080471, y: 0.6840028, z: 0.14964293}
 --- !u!1 &3404882796215435470
 GameObject:
   m_ObjectHideFlags: 0

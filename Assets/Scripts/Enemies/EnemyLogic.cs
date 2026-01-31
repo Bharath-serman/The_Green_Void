@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.AI;
+using System.Collections;
 
 public class EnemyLogic : MonoBehaviour
 {
@@ -8,61 +8,62 @@ public class EnemyLogic : MonoBehaviour
     public NavMeshAgent navAgent;
     public Transform player;
     public Animator anim;
-    public ParticleSystem hitEffect;
 
     [Header("Stats")]
     public float health = 100f;
-    public int damage = 10;
 
-    [Header("Movement/Detection")]
+    [Header("Movement / Detection")]
     public float walkPointRange = 10f;
     public float sightRange = 15f;
     public float attackRange = 2f;
     public float timeBetweenAttacks = 1.5f;
+    public float attackCommitTime = 0.2f;
 
     private Vector3 walkPoint;
     private bool walkPointSet;
-    private bool alreadyAttacked;
-    private bool takeDamage;
+    private bool isAttacking;
+    private bool attackCommitted;
     private bool isDead;
 
     private void Awake()
     {
-        player = GameObject.Find("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         navAgent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+
+        navAgent.updatePosition = true;
+        navAgent.updateRotation = true;
     }
 
     private void Update()
     {
         if (isDead) return;
 
-        // Check if player is within ranges
-        bool playerInSightRange = Physics.CheckSphere(transform.position, sightRange, LayerMask.GetMask("Player"));
-        bool playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, LayerMask.GetMask("Player"));
+        float distance = Vector3.Distance(transform.position, player.position);
 
-        if (!playerInSightRange && !playerInAttackRange)
+        // 🔒 While attacking, don't change state
+        if (isAttacking)
+            return;
+
+        if (distance <= attackRange)
         {
-            Patroling();
+            StartAttack();
         }
-        else if (playerInSightRange && !playerInAttackRange)
+        else if (!attackCommitted && distance <= sightRange)
         {
             ChasePlayer();
         }
-        else if (playerInAttackRange && playerInSightRange)
+        else if (!attackCommitted)
         {
-            AttackPlayer();
-        }
-        else if (!playerInSightRange && takeDamage)
-        {
-            ChasePlayer();
+            Patrol();
         }
     }
 
-    #region Patrol
-    private void Patroling()
+    // ===================== PATROL =====================
+    private void Patrol()
     {
         anim.SetBool("isWalking", true);
+        navAgent.isStopped = false;
 
         if (!walkPointSet)
             SearchWalkPoint();
@@ -70,112 +71,82 @@ public class EnemyLogic : MonoBehaviour
         if (walkPointSet)
             navAgent.SetDestination(walkPoint);
 
-        // Check if reached walk point
         if (Vector3.Distance(transform.position, walkPoint) < 1f)
             walkPointSet = false;
     }
 
     private void SearchWalkPoint()
     {
-        float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        float randomX = Random.Range(-walkPointRange, walkPointRange);
+        Vector3 randomPoint = transform.position +
+            new Vector3(Random.Range(-walkPointRange, walkPointRange), 0,
+                        Random.Range(-walkPointRange, walkPointRange));
 
-        Vector3 potentialPoint = transform.position + new Vector3(randomX, 0, randomZ);
-
-        // Sample nearest point on NavMesh
         NavMeshHit hit;
-        if (NavMesh.SamplePosition(potentialPoint, out hit, 2f, NavMesh.AllAreas))
+        if (NavMesh.SamplePosition(randomPoint, out hit, 2f, NavMesh.AllAreas))
         {
             walkPoint = hit.position;
             walkPointSet = true;
         }
     }
-    #endregion
 
-    #region Chase
+    // ===================== CHASE =====================
     private void ChasePlayer()
     {
         anim.SetBool("isWalking", true);
         navAgent.isStopped = false;
         navAgent.SetDestination(player.position);
     }
-    #endregion
 
-    #region Attack
-    private void AttackPlayer()
+    // ===================== ATTACK =====================
+    private void StartAttack()
     {
-        navAgent.SetDestination(transform.position); // Stop moving
+        isAttacking = true;
+
         navAgent.isStopped = true;
+        navAgent.ResetPath();
+        navAgent.velocity = Vector3.zero;
+
         anim.SetBool("isWalking", false);
 
-        // Smooth rotation towards player
-        Vector3 direction = (player.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+        Vector3 dir = (player.position - transform.position).normalized;
+        transform.rotation = Quaternion.LookRotation(new Vector3(dir.x, 0, dir.z));
 
-        // Attack if not already attacking
-        float distance = Vector3.Distance(transform.position, player.position);
-        if (distance <= attackRange && !alreadyAttacked)
-        {
-            alreadyAttacked = true;
+        anim.ResetTrigger("Attack1");
+        anim.ResetTrigger("Attack2");
 
-            // Random attack animation
-            if (Random.value > 0.5f)
-                anim.SetTrigger("Attack1");
-            else
-                anim.SetTrigger("Attack2");
+        if (Random.value > 0.5f)
+            anim.SetTrigger("Attack1");
+        else
+            anim.SetTrigger("Attack2");
 
-            // Reset attack after cooldown
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
-        }
+        Invoke(nameof(EndAttack), timeBetweenAttacks);
     }
 
-    private void ResetAttack()
+    private void EndAttack()
     {
-        alreadyAttacked = false;
+        isAttacking = false;
+        StartCoroutine(AttackCommitCoroutine());
     }
-    #endregion
 
-    #region Damage & Death
-    public void TakeDamage(float damageAmount)
+    private IEnumerator AttackCommitCoroutine()
     {
-        if (isDead) return;
+        attackCommitted = true;
 
-        health -= damageAmount;
+        navAgent.isStopped = true;
+        navAgent.velocity = Vector3.zero;
 
-        if (hitEffect != null)
-            hitEffect.Play();
+        yield return new WaitForSeconds(attackCommitTime);
 
-        StartCoroutine(TakeDamageCoroutine());
-
-        if (health <= 0)
-            Die();
+        attackCommitted = false;
+        navAgent.isStopped = false;
     }
 
-    private IEnumerator TakeDamageCoroutine()
-    {
-        takeDamage = true;
-        yield return new WaitForSeconds(2f);
-        takeDamage = false;
-    }
-
+    // ===================== DEATH =====================
     private void Die()
     {
         isDead = true;
         navAgent.isStopped = true;
         navAgent.enabled = false;
-
         anim.SetBool("isDead", true);
-        Destroy(gameObject, 3f); // wait for death animation
-    }
-    #endregion
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
-
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, sightRange);
     }
 }
