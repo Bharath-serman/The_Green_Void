@@ -18,7 +18,7 @@ public class Signals : MonoBehaviour
     [Tooltip("Inputs required for Changing the Skybox")]
     //public Skybox GreenSkyBox;
     [SerializeField]public Material GreenMaterial;
-    private string InitialScene = "ChaosLevel";
+    private int ChaosSceneIndex = 2;
 
     public void CallZoomInCoroutine()
     {
@@ -73,7 +73,7 @@ public class Signals : MonoBehaviour
     public void NextScene()
     {
         //Load next scene.
-        SceneManager.LoadScene(InitialScene);
+        SceneManager.LoadScene(ChaosSceneIndex);
     }
 
     #region Level_One_Loader_

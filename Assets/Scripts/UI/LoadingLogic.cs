@@ -11,7 +11,7 @@ public class LoadingLogic : MonoBehaviour
     public static LoadingLogic Instance;
     private bool LoadingPanelStatus = false;
     public Slider LoadingSlider;
-    private string Scene_Name = "Level_one";
+    private int Scene_Index = 1;
     private bool IsBlinking = false;
     private float BlinkInterval = 0.2f;
 
@@ -44,14 +44,14 @@ public class LoadingLogic : MonoBehaviour
 
     public void LoadingPanelLogic()
     {
-        StartCoroutine(LoadLogic(Scene_Name));
+        StartCoroutine(LoadLogic(Scene_Index));
     }
 
     #region LoadLogic
-    IEnumerator LoadLogic(string SceneName)
+    IEnumerator LoadLogic(int SceneIndex)
     {
         //Get the AsyncOpearation.
-        AsyncOperation Operation = SceneManager.LoadSceneAsync(SceneName);
+        AsyncOperation Operation = SceneManager.LoadSceneAsync(SceneIndex);
 
         //Show the LoadingPanel.
         LoadingPanel.SetActive(!LoadingPanelStatus);  //True.
