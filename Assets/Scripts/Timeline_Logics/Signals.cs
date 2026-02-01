@@ -8,7 +8,7 @@ public class Signals : MonoBehaviour
     //Input Section
     [Header("FOV")]
     [Tooltip("Inputs required for Manipulating the FOV Angle")]
-    public CinemachineVirtualCamera VirtualCamera;
+    [SerializeField]public CinemachineVirtualCamera VirtualCamera;
     private float ZoomInFOV = 1f;
     private float ZoomOutFOV = 93.90182f;
     private float ZoomInTime = 1.5f;
@@ -17,7 +17,7 @@ public class Signals : MonoBehaviour
     [Header("Skybox and Scene")]
     [Tooltip("Inputs required for Changing the Skybox")]
     //public Skybox GreenSkyBox;
-    public Material GreenMaterial;
+    [SerializeField]public Material GreenMaterial;
     private string InitialScene = "ChaosLevel";
 
     public void CallZoomInCoroutine()
@@ -75,4 +75,22 @@ public class Signals : MonoBehaviour
         //Load next scene.
         SceneManager.LoadScene(InitialScene);
     }
+
+    #region Level_One_Loader_
+
+    //Create a Method to call the Instance.
+    public void StandUpAnimation()
+    {
+        //Trigger the stand animation from the Level_One_Loader Script.
+        Level_One_Loader.Instance.StartStanding();
+        print("Standing Up");
+    }
+
+    public void DAndE()
+    {
+        Level_One_Loader.Instance.DisableandEnable();
+        print("GameObjects Manipulated");
+    }
+
+    #endregion
 }
