@@ -11,7 +11,7 @@ public class LoadingLogic : MonoBehaviour
     public static LoadingLogic Instance;
     private bool LoadingPanelStatus = false;
     public Slider LoadingSlider;
-    private string Scene_Name = "CutsceneMenu";
+    private string Scene_Name = "Level_one";
     private bool IsBlinking = false;
     private float BlinkInterval = 0.2f;
 

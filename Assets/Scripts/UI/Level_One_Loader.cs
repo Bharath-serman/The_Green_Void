@@ -10,6 +10,8 @@ public class Level_One_Loader : MonoBehaviour
     public Animator FadeClip;
     public GameObject BeginButton;
 
+    [SerializeField] public Animator StandUpAnimator;
+
     [Tooltip("The Canvas which has the FadeAnimator")]
     public GameObject StartCanvas;
 
@@ -22,7 +24,6 @@ public class Level_One_Loader : MonoBehaviour
     {
         //Disable/Hide the Button.
         BeginButton.SetActive(ActiveStatus);  //False.
-
         //Start the coroutine
         StartCoroutine(ClipStopLogic(5f));
     }
