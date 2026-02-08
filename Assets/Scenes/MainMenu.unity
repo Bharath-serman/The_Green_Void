@@ -787,14 +787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueTexts: {fileID: 137470414}
-  TypingSpeed: 0.05
-  Texts:
-  - Is that an apocalypse?
-  - What is an void?
-  - Your death will be a brutal one.
-  - Fear the pain.
-  EraseSpeed: 0.05
-  WaitDelay: 1
+  data: {fileID: 11400000, guid: a8c228bff3a277a47a1142cbcfb60dc6, type: 2}
 --- !u!1001 &1600615415
 PrefabInstance:
   m_ObjectHideFlags: 0

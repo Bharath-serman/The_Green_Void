@@ -9,11 +9,12 @@ public class TypeWritingEffect : MonoBehaviour
 
     //Get the TextObject
     public TMP_Text DialogueTexts;
-    [SerializeField] private float TypingSpeed = 0.05f;
-    [SerializeField] private string[] Texts;
-    [SerializeField] private float EraseSpeed = 0.05f;
-    [SerializeField] private float WaitDelay = 1f;
+    //] private float TypingSpeed = 0.05f;
+    //[SerializeField] private string[] Texts;
+    //[SerializeField] private float EraseSpeed = 0.05f;
+    //[SerializeField] private float WaitDelay = 1f;
 
+    public TypingTexts data;
     private bool loop = true;
     
     #endregion
@@ -35,7 +36,7 @@ public class TypeWritingEffect : MonoBehaviour
         int index = 0;
         while (loop)
         {
-            foreach (string s in Texts)
+            foreach (string s in data.Texts)
             {
 
                 if (index == 2)
@@ -48,11 +49,11 @@ public class TypeWritingEffect : MonoBehaviour
                 foreach (char c in s)
                 {
                     DialogueTexts.text += c;
-                    yield return new WaitForSeconds(TypingSpeed);
+                    yield return new WaitForSeconds(data.TypingSpeed);
                 }
                 index++;
 
-                yield return new WaitForSeconds(WaitDelay);
+                yield return new WaitForSeconds(data.WaitDelay);
 
                 #endregion
 
@@ -60,7 +61,7 @@ public class TypeWritingEffect : MonoBehaviour
                 for (int i = DialogueTexts.text.Length - 1; i > 0; i--)
                 {
                     DialogueTexts.text = DialogueTexts.text.Substring(0, i - 1);
-                    yield return new WaitForSeconds(EraseSpeed);
+                    yield return new WaitForSeconds(data.EraseSpeed);
                 }
 
                 yield return new WaitForSeconds(1.5f);
