@@ -12,6 +12,10 @@ public class DoorInteract : MonoBehaviour
     public Animator DoorAnimator;
     private bool IsOpened = false;
 
+    [Header("Audio")]
+    [SerializeField] AudioSource FrontDoorSource;
+    [SerializeField] AudioSource InteriorDoorSource;
+
     private string FrontDoorTrigger = "FrontDoor";
     private string InteriorDoorTrigger = "InteriorDoor";
     private string TagName = "Player";
@@ -29,6 +33,7 @@ public class DoorInteract : MonoBehaviour
             DoorOpen();
     }
 
+    #region OpenLogic
     private void DoorOpen()
     {
         //Check for DoorType
@@ -37,12 +42,17 @@ public class DoorInteract : MonoBehaviour
             case DoorType.FrontDoor:
                 //Play the FrontDoorAnimation
                 DoorAnimator.SetTrigger(FrontDoorTrigger);
+                //Play the Audio
+                FrontDoorSource.Play();
                 break;
             case DoorType.InteriorDoor:
                 //Play the InteriorDoorAnimation
                 DoorAnimator.SetTrigger(InteriorDoorTrigger);
+                //Play the Audio
+                InteriorDoorSource.Play();
                 break;
         }
         IsOpened = true;
     }
+    #endregion
 }
