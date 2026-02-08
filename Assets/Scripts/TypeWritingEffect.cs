@@ -13,6 +13,8 @@ public class TypeWritingEffect : MonoBehaviour
     [SerializeField] private string[] Texts;
     [SerializeField] private float EraseSpeed = 0.05f;
     [SerializeField] private float WaitDelay = 1f;
+
+    private bool loop = true;
     
     #endregion
     void Start()
@@ -30,28 +32,39 @@ public class TypeWritingEffect : MonoBehaviour
     IEnumerator TypeWriting()
     {
         #region String Iteration
-        foreach (string s in Texts)
+        int index = 0;
+        while (loop)
         {
-            DialogueTexts.text = "";
-            //Iterate the Characters in it.
-            foreach(char c in s)
+            foreach (string s in Texts)
             {
-                DialogueTexts.text += c;
-                yield return new WaitForSeconds(TypingSpeed);
+
+                if (index == 2)
+                    DialogueTexts.color = Color.green;
+                else
+                    DialogueTexts.color = Color.grey;
+
+                DialogueTexts.text = "";
+                //Iterate the Characters in it.
+                foreach (char c in s)
+                {
+                    DialogueTexts.text += c;
+                    yield return new WaitForSeconds(TypingSpeed);
+                }
+                index++;
+
+                yield return new WaitForSeconds(WaitDelay);
+
+                #endregion
+
+                #region String Erase
+                for (int i = DialogueTexts.text.Length - 1; i > 0; i--)
+                {
+                    DialogueTexts.text = DialogueTexts.text.Substring(0, i - 1);
+                    yield return new WaitForSeconds(EraseSpeed);
+                }
+
+                yield return new WaitForSeconds(1.5f);
             }
-
-            yield return new WaitForSeconds(WaitDelay);
-
-            #endregion
-
-            #region String Erase
-            for (int i = DialogueTexts.text.Length - 1; i > 0; i--)
-            {
-                DialogueTexts.text = DialogueTexts.text.Substring(0, i - 1);
-                yield return new WaitForSeconds(EraseSpeed);
-            }
-
-            yield return new WaitForSeconds(1.5f);
         }
         #endregion
     }
