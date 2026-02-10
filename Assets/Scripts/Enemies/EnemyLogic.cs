@@ -25,13 +25,17 @@ public class EnemyLogic : MonoBehaviour
     private bool attackCommitted;
     private bool isDead;
 
-    private void Awake()
+    private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         navAgent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
 
-        ChaosManager.Instance.RegisterEnemy(this);
+        if (ChaosManager.Instance != null)
+        {
+            ChaosManager.Instance.RegisterEnemy(this);
+        }
+
 
         navAgent.updatePosition = true;
         navAgent.updateRotation = true;
@@ -73,8 +77,11 @@ public class EnemyLogic : MonoBehaviour
         if (walkPointSet)
             navAgent.SetDestination(walkPoint);
 
-        if (Vector3.Distance(transform.position, walkPoint) < 1f)
+        if (!navAgent.pathPending && navAgent.remainingDistance <= navAgent.stoppingDistance)
+        {
             walkPointSet = false;
+        }
+
     }
 
     private void SearchWalkPoint()

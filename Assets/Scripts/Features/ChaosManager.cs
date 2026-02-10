@@ -41,6 +41,7 @@ public class ChaosManager : MonoBehaviour
     public void RegisterEnemy(EnemyLogic enemy)
     {
         enemies.Add(enemy);
+        Debug.Log("Enemy Registered: " + enemy.name);
     }
 
     // Update is called once per frame
