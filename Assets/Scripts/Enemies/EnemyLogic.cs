@@ -31,6 +31,8 @@ public class EnemyLogic : MonoBehaviour
         navAgent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
 
+        ChaosManager.Instance.RegisterEnemy(this);
+
         navAgent.updatePosition = true;
         navAgent.updateRotation = true;
     }
