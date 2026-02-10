@@ -48,7 +48,7 @@ All assets and code are for educational and portfolio purposes unless stated oth
 
 ## Author
 
-Developed by **Bharath serman R**  
+**Bharath serman R**  
 (Unity Game Developer)
 
 ---
