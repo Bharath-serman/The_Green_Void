@@ -3,19 +3,23 @@
   "WorkspaceRootPath": "D:\\The_Green_Void_\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\so_documents\\documentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\so_documents\\documentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\so_documents\\documentpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\so_documents\\documentpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\features\\jumpscaremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\features\\jumpscaremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\so_documents\\documentdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\so_documents\\documentdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\so_documents\\documentpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\so_documents\\documentpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\so_documents\\documentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\so_documents\\documentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\features\\doorinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\features\\doorinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\features\\doorinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -70,7 +74,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Signals.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\Timeline_Logics\\Signals.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timeline_Logics\\Signals.cs",
@@ -83,15 +87,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DocumentPickup.cs",
-              "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_Documents\\DocumentPickup.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SO_Documents\\DocumentPickup.cs",
-              "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_Documents\\DocumentPickup.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SO_Documents\\DocumentPickup.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwA0AAAA0AAAA",
+              "DocumentIndex": 1,
+              "Title": "JumpscareManager.cs",
+              "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\Features\\JumpscareManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Features\\JumpscareManager.cs",
+              "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\Features\\JumpscareManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Features\\JumpscareManager.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwBoAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T06:26:14.724Z",
+              "WhenOpened": "2026-02-13T11:22:51.768Z",
               "EditorCaption": ""
             },
             {
@@ -116,20 +120,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "DocumentPickup.cs",
+              "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_Documents\\DocumentPickup.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SO_Documents\\DocumentPickup.cs",
+              "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_Documents\\DocumentPickup.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SO_Documents\\DocumentPickup.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T06:26:14.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DocumentData.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_Documents\\DocumentData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SO_Documents\\DocumentData.cs",
               "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_Documents\\DocumentData.cs",
               "RelativeToolTip": "Assets\\Scripts\\SO_Documents\\DocumentData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-13T06:07:09.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ObjectivePanelLogic.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\ObjectivePanelLogic.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ObjectivePanelLogic.cs",
@@ -141,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DoorInteract.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\Features\\DoorInteract.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Features\\DoorInteract.cs",
@@ -149,12 +166,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Features\\DoorInteract.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T04:36:24.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-08T04:36:24.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "SubtitleCollider.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_SubTitle\\SubtitleCollider.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SO_SubTitle\\SubtitleCollider.cs",
@@ -166,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "SubtitleManager.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_SubTitle\\SubtitleManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SO_SubTitle\\SubtitleManager.cs",
@@ -178,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "TimeLineManager.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\Timeline_Logics\\TimeLineManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timeline_Logics\\TimeLineManager.cs",
@@ -190,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Level_One_Loader.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\Level_One_Loader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\Level_One_Loader.cs",
@@ -202,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "StartGameLogic.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\StartGameLogic.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\StartGameLogic.cs",
@@ -220,7 +236,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MenuPanelsLogic.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\MenuPanelsLogic.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MenuPanelsLogic.cs",
@@ -237,20 +253,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "DocumentManager.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_Documents\\DocumentManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SO_Documents\\DocumentManager.cs",
               "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_Documents\\DocumentManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\SO_Documents\\DocumentManager.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBsAAAAcAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-13T06:19:40.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoadingLogic.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\LoadingLogic.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\LoadingLogic.cs",
@@ -262,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TypeWritingEffect.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\Features\\TypeWritingEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Features\\TypeWritingEffect.cs",
