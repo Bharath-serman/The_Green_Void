@@ -1508,7 +1508,7 @@ PrefabInstance:
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
       propertyPath: field of view
-      value: 1
+      value: 68.819244
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
@@ -2254,12 +2254,12 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 15
+  m_Priority: 32415
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 1
+    FieldOfView: 68.819244
     OrthographicSize: 10
     NearClipPlane: 0.2
     FarClipPlane: 500
@@ -3285,6 +3285,11 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 3988866269255216551, guid: 3fd5a183d619a2647900f1b567e9069a,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -217.94778
+      objectReference: {fileID: 0}
     - target: {fileID: 4521577390661935546, guid: 3fd5a183d619a2647900f1b567e9069a,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -3334,6 +3339,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537364677600374510, guid: 3fd5a183d619a2647900f1b567e9069a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -107.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537364677600374510, guid: 3fd5a183d619a2647900f1b567e9069a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25.8
       objectReference: {fileID: 0}
     - target: {fileID: 7596802042515261141, guid: 3fd5a183d619a2647900f1b567e9069a,
         type: 3}
