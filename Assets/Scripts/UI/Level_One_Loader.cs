@@ -52,18 +52,18 @@ public class Level_One_Loader : MonoBehaviour
     {
         //Play the Animation (Canvas Loader Animation)
         FadeClip.SetTrigger(TriggerName);
-        print("Trigger has been fired!");
+        //print("Trigger has been fired!");
 
         //Wait for some time
         yield return new WaitForSeconds(WaitTime);
-        print("Exiting Animation");
+        //print("Exiting Animation");
 
         //Stop the Animation
         FadeClip.ResetTrigger(TriggerName);
 
         //Disable the Canvas
         StartCanvas.SetActive(ActiveStatus);  //False.
-        print("Canvas Got ridden!");
+        //print("Canvas Got ridden!");
 
         //Wait for some time.
         yield return new WaitForSeconds(WaitTime);
