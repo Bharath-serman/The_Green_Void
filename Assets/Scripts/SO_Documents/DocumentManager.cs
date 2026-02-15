@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class DocumentManager : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class DocumentManager : MonoBehaviour
 
     private bool status = false;
     public AudioSource FallBGM;
-    //private float delayduration = 4f;
+    public TMP_Text WarningText;
 
     [Header("Disable Objects")]
     public GameObject[] DisableObjects;
@@ -38,7 +39,7 @@ public class DocumentManager : MonoBehaviour
             CloseDocument();
 
             //Starting the Falling Down Coroutine.
-            StartCoroutine(FallDown(1f, 2.9f));
+            StartCoroutine(FallDown(0.4f, 3.9f, "ChaosLevel"));
         }
     }
 
@@ -64,7 +65,7 @@ public class DocumentManager : MonoBehaviour
 
     #region FallDownAnimLogic
     
-    IEnumerator FallDown(float delayduration, float PanelDuration)
+    IEnumerator FallDown(float delayduration, float PanelDuration, string SceneName)
     {
         //Wait for some seconds.
         yield return new WaitForSeconds(delayduration);
@@ -90,6 +91,19 @@ public class DocumentManager : MonoBehaviour
 
         //Enable the BlackoutPanel.
         BlackoutPanel.SetActive(true);
+        BlackoutPanel.GetComponentInChildren<TMP_Text>().enabled = false;
+
+        //Wait for some seconds.
+        yield return new WaitForSeconds(1.1f);
+
+        //Show the Text Element.
+        BlackoutPanel.GetComponentInChildren<TMP_Text>().enabled = true;
+
+        //Wait for some seconds.
+        yield return new WaitForSeconds(3.2f);
+
+        //Load to next Scene.
+        SceneManager.LoadScene(SceneName);
     }
 
     #endregion

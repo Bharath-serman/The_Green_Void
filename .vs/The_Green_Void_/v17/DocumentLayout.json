@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "D:\\The_Green_Void_\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\so_documents\\documentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\enemies\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\enemies\\enemylogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemylogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\so_documents\\documentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\so_documents\\documentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\ui\\loadinglogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\loadinglogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\timeline_logics\\signals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timeline_logics\\signals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\ui\\level_one_loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\level_one_loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\ui\\menupanelslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\menupanelslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\ui\\loadinglogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\loadinglogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\features\\doorinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\features\\doorinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|d:\\the_green_void_\\assets\\scripts\\timeline_logics\\signals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timeline_logics\\signals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|D:\\The_Green_Void_\\assets\\scripts\\ui\\menupanelslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B2E3D4B-236A-B5A2-3E04-1919ECE6EAE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\menupanelslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,29 +46,28 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Signals.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\Timeline_Logics\\Signals.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timeline_Logics\\Signals.cs",
               "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\Timeline_Logics\\Signals.cs",
               "RelativeToolTip": "Assets\\Scripts\\Timeline_Logics\\Signals.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAwFQAAAAyAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAwFQAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-18T12:38:30.984Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DocumentManager.cs",
-              "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_Documents\\DocumentManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SO_Documents\\DocumentManager.cs",
-              "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_Documents\\DocumentManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SO_Documents\\DocumentManager.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAAACgAAAAvAAAA",
+              "Title": "Monster.cs",
+              "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\Enemies\\Monster.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Monster.cs",
+              "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\Enemies\\Monster.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Monster.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T01:34:14.199Z",
+              "WhenOpened": "2026-02-15T10:58:17.857Z",
               "EditorCaption": ""
             },
             {
@@ -97,7 +104,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "EnemyLogic.cs",
+              "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\Enemies\\EnemyLogic.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\EnemyLogic.cs",
+              "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\Enemies\\EnemyLogic.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\EnemyLogic.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T10:43:15.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DocumentManager.cs",
+              "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_Documents\\DocumentManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SO_Documents\\DocumentManager.cs",
+              "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\SO_Documents\\DocumentManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SO_Documents\\DocumentManager.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAAAGYAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T01:34:14.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DoorInteract.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\Features\\DoorInteract.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Features\\DoorInteract.cs",
@@ -105,27 +137,25 @@
               "RelativeToolTip": "Assets\\Scripts\\Features\\DoorInteract.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T04:36:24.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-08T04:36:24.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Level_One_Loader.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\Level_One_Loader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\Level_One_Loader.cs",
               "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\Level_One_Loader.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\Level_One_Loader.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAwE4AAAAgAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAawBYAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T12:33:18.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T12:33:18.767Z"
             }
           ]
         },
         {
           "DockedWidth": 291,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
@@ -138,7 +168,8 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-31T12:02:21.008Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -146,16 +177,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "LoadingLogic.cs",
               "DocumentMoniker": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\LoadingLogic.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\LoadingLogic.cs",
               "ToolTip": "D:\\The_Green_Void_\\Assets\\Scripts\\UI\\LoadingLogic.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\LoadingLogic.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAqwAUAAAAaAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAAUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T12:41:32.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-11T12:41:32.421Z"
             }
           ]
         }
