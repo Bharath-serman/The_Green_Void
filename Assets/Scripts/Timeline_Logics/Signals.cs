@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using Cinemachine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 
 public class Signals : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Signals : MonoBehaviour
     private float ZoomInTime = 1.5f;
     private float ZoomOutTime = 2.8f;
 
+    [SerializeField] Animator FadeAnimator;
+    //private bool CanFade;
     [Header("Skybox and Scene")]
     [Tooltip("Inputs required for Changing the Skybox")]
     //public Skybox GreenSkyBox;
@@ -90,6 +93,22 @@ public class Signals : MonoBehaviour
     {
         Level_One_Loader.Instance.DisableandEnable();
         print("GameObjects Manipulated");
+    }
+
+    #endregion
+
+    #region ChaosLevel
+
+    public void BeginAnimation()
+    {
+        //Trigger the boolean value for the animation.
+        if(FadeAnimator != null)
+        {
+            //Trigger the animation.
+            FadeAnimator.SetTrigger("CanFade");
+        }
+        //Change the Boolean value.
+        //CanFade = true;
     }
 
     #endregion

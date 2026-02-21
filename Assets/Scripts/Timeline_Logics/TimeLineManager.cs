@@ -10,7 +10,7 @@ public class TimeLineManager : MonoBehaviour
     private bool IsDisable = false;
 
     //Method for enabling and disabling
-    #region MainMethod
+    #region E And D
     public void EnableAndDisable()
     {
         //Iterate through each objects in the array.
@@ -31,4 +31,5 @@ public class TimeLineManager : MonoBehaviour
         }
     }
     #endregion
+
 }
