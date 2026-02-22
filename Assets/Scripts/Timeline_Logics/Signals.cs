@@ -112,4 +112,10 @@ public class Signals : MonoBehaviour
     }
 
     #endregion
+
+    public void RevivePlayerandCamera()
+    {
+        //Invoke the Method from SeparateEAndD Script.
+        SeparateEAndD.instance.CamPlayerEnable();
+    }
 }
