@@ -24,6 +24,7 @@ public class ObjectivePanelLogic : MonoBehaviour
         }
     }
 
+    #region OpenPanel
     void OpenPanel()
     {
         IsOpen = !IsOpen;
@@ -39,5 +40,6 @@ public class ObjectivePanelLogic : MonoBehaviour
             Time.timeScale = 1f;
             ObjectivePanel.SetActive(false);
         }
-    }
+    } 
+    #endregion
 }
