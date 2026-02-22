@@ -1,7 +1,9 @@
 using UnityEngine;
+using Cinemachine;
 
 public class SeparateEAndD : MonoBehaviour
 {
+    public static SeparateEAndD instance;
     //Get the Inputs.
     [Header("E And D")]
     [Tooltip("GameObjects that need to be disabled and enabled")]
@@ -11,6 +13,18 @@ public class SeparateEAndD : MonoBehaviour
 
     public GameObject DialogueCanvas;
     private bool CanvasStatus = false;
+    [SerializeField] GameObject PlayerFollowCamera;
+    [SerializeField] GameObject PlayerHerbert;
+    [Header("CutsceneVirtualCamera")]
+    [SerializeField] GameObject CutsceneCam;
+
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+    }
 
     #region E And D
     public void EnableObj()
@@ -37,5 +51,15 @@ public class SeparateEAndD : MonoBehaviour
         DialogueCanvas.SetActive(CanvasStatus);  //False.
     }
 
+    #endregion
+
+    #region EnablePlayerandCamera
+    public void CamPlayerEnable()
+    {
+        //Enable the Player and PlayerFollowCamera.
+        PlayerFollowCamera.SetActive(true);
+        PlayerHerbert.SetActive(true);
+        CutsceneCam.SetActive(false);
+    } 
     #endregion
 }
